@@ -9,41 +9,9 @@ html
     script(src='/js/script.js')
 
   body
-    #leftSide.leftPush
-      #app
-      #exp
-      #sit
-      #jeu
-    #floatingMenu.leftPush
-      #selectorLeft.selector
-      #selectorRight.selector
-      #hideButton
-        span
-      #insideMenu
-      #logo
-      #menuTexte
-        h1 ETIENNE CHAUMONT
-        ul
-          li.menuElement APPLICATIONS
-          li.menuElement EXPERIENCES
-          li.menuElement SITES
-          li.menuelement JEUX
-        span#separator
-        a#contactButton
-    #rightSide.rightSidePush
-      #rightMenu.rightMenuPush
-          ul
-            li
-              a(href='#section1') SECTION 1
-            li
-              a(href='#section2') SECTION 1
-            li
-              a(href='#section3') SECTION 1
-        span#showButton
-          span
-        #contentRight
-          #section1.section
-          #section2.section
-          #section3.section
+    include leftSide.jade
+    include menu.jade
+    include rightSide.jade
+   
 
     footer
