@@ -7,7 +7,7 @@
     "jade": "*",
     "stylus": "*",
     "nib": "*"
-  }
+  },
   "engines": {
     "node": "0.10.x"
   }
